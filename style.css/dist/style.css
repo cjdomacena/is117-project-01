@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 20px;
+}
+@media (max-width: 500px) {
+  html {
+    font-size: 18px;
+  }
+}
+html p {
+  letter-spacing: 2px;
+}
+
+body {
+  background-color: #151515;
+  font-family: "Amatic SC", cursive;
+}
+
+.change-color {
+  background-color: rgba(38, 38, 38, 0.8);
+}
+.change-color #logo {
+  margin: 0.2rem;
+}
+
+header nav {
+  margin: 0;
+  margin-top: 0.5rem;
+  padding: 0 !important;
+}
+header #logo:hover rect {
+  stroke: #C4C4C4;
+}
+header #logo:hover path {
+  fill: #C4C4C4;
+}
+header .navbar-collapse ul {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+header .navbar-collapse ul a {
+  color: #FCED9B !important;
+  font-weight: 700;
+  font-size: 1.25rem;
+}
+header .navbar-collapse ul a:hover {
+  color: #C4C4C4 !important;
+}
+header .navbar-collapse ul .active {
+  color: #C4C4C4 !important;
+}
+@media (max-width: 991px) {
+  header .collapse {
+    margin-top: 1rem;
+    border-top: solid 0.2px #C4C4C4;
+  }
+}
+header .bg-dark.scrolled {
+  background-color: #C4C4C4 !important;
+}
+
+.divider {
+  width: 100%;
+  height: 1px;
+  background-color: #C4C4C4;
+}
+
+main {
+  height: auto;
+  display: grid;
+  place-items: center;
+}
+main .hero-container {
+  padding-bottom: 3rem;
+  margin: 0;
+}
+@media (max-width: 560px) {
+  main .hero-container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  main .hero-container .col-12 {
+    padding: 0;
+    margin: 0;
+  }
+}
+main .hero-container .hero-text {
+  color: #FCED9B;
+}
+main .hero-container .hero-text h1 {
+  font-size: 2.6rem;
+  line-height: 71px;
+}
+main .hero-container .hero-text h1 span {
+  font-weight: 700;
+}
+main .hero-container .hero-text p {
+  font-size: 1.25rem;
+  line-height: 42px;
+  color: #FFF8D2;
+}
+main .hero-container .hero-text .hero-buttons {
+  width: 350px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+@media (max-width: 550px) {
+  main .hero-container .hero-text .hero-buttons {
+    flex-direction: column;
+    height: 100px;
+    width: 100%;
+  }
+}
+main .hero-container .hero-text .hero-buttons .hero-btn {
+  width: 160px;
+  background-color: transparent;
+  border: 3px solid #FCED9B;
+  font-size: 1.25rem;
+  color: #FCED9B;
+  font-weight: 700;
+}
+main .hero-container .hero-text .hero-buttons .hero-btn:hover {
+  background-color: #C4C4C4;
+}
+main .hero-container #hero-img-container {
+  margin: 0 auto;
+}
+
+#project-container {
+  height: auto;
+  margin-top: 2rem;
+  color: #FCED9B;
+}
+#project-container .row {
+  height: auto;
+}
+#project-container .project-section {
+  height: 50%;
+}
+#project-container .project-row {
+  display: flex;
+  align-items: center;
+}
+@media (min-width: 800px) {
+  #project-container .project-row {
+    margin: 0 auto;
+  }
+}
+#project-container .project-body {
+  max-width: 400px;
+  height: 100%;
+  font-weight: 700;
+}
+#project-container .project-body a {
+  color: #FCED9B;
+}
+#project-container .project-body a:hover,
+#project-container .project-body svg:hover {
+  color: #C4C4C4;
+}
+#project-container .project-body a:hover path,
+#project-container .project-body svg:hover path {
+  fill: #C4C4C4;
+  stroke: #C4C4C4;
+}
+#project-container .project-body span {
+  color: #C4C4C4;
+  font-family: "Amatic SC", cursive;
+  font-size: 1rem;
+}
+#project-container .project-body h1 {
+  color: #FCED9B;
+  font-size: 2.6rem;
+}
+#project-container .project-body p {
+  color: #FFF8D2;
+  font-weight: 400;
+  line-height: 33px;
+  font-size: 1rem;
+}
+#project-container .project-vid {
+  height: auto;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+#project-container .project-vid video {
+  height: 100%;
+  width: 100%;
+}
+
+#resume-container {
+  color: #FCED9B;
+  font-family: 700;
+  padding: 0 1rem;
+  margin-top: 2rem;
+}
+@media (min-width: 420px) {
+  #resume-container {
+    padding: 0;
+  }
+}
+#resume-container .col-12 {
+  padding: 0 1rem;
+}
+#resume-container h1 {
+  font-size: 2.6rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+#resume-container h2 {
+  font-size: 2.05rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+#resume-container p {
+  line-height: 33px;
+  font-size: 1rem;
+  color: #FFF8D2;
+}
+#resume-container .education-container h1 {
+  padding: 0;
+  margin: 0;
+  font-size: 2.05rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+#resume-container .education-container span {
+  color: #C4C4C4;
+  font-size: 1rem;
+}
+#resume-container .skills-card {
+  width: 100%;
+}
+#resume-container .skills-card h3 {
+  margin-bottom: 0;
+  padding-bottom: 0.2rem;
+  font-weight: 400;
+  font-size: 1.65rem;
+}
+#resume-container .skills-card p {
+  padding-bottom: 0;
+  margin: 0;
+  color: #FFF8D2;
+  font-size: 1rem;
+}
+#resume-container .skills-card .progress {
+  width: 100%;
+  height: 10px;
+  background-color: transparent;
+  border: 1px solid #FCED9B;
+}
+#resume-container .skills-card .progress .progress-bar {
+  background-color: #FCED9B;
+}
+#resume-container .summary-card {
+  width: 402px;
+  margin: 0;
+}
+@media (max-width: 420px) {
+  #resume-container .summary-card {
+    width: 100%;
+  }
+}
+
+footer {
+  height: auto;
+  background-color: #FFF8D2;
+  margin-top: 2rem;
+  color: #151515;
+  font-size: 1rem;
+}
+footer svg path {
+  fill: #151515;
+}
