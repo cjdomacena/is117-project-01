@@ -58,9 +58,13 @@ body {
 .change-color
 {
     background-color: rgba($color: #262626, $alpha: .8);
+    .container
+    {
+        padding: .2rem 0;
+    }
     #logo
     {
-        margin: .2rem;
+        margin-bottom: .2rem;
     }
 }
 header {
